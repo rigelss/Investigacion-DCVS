@@ -1,0 +1,64 @@
+storia DCVS
+===================
+
+
+Durante mucho tiempo la gestiÎáÎõÎån o control de versiones se llevÎáÎõÎå a cabo
+de manera centralizada con todos sus defectos y ventajas, llegado el 
+momento este esquema no pudo soportar los sistemas modernos lo cual condujo 
+a la creaciÎáÎõÎån de Distributed Control Version Systems. 
+En un modelo distribuido cada desarrollador tiene su propio repositorio,
+trabaja en forma local, modifica y crea archivos o directorios sin
+conocimiento de los demÎáÎõÎİs, es solo hasta que se realiza una operaciÎáÎõÎån 
+del tipo push, que se envÎáÎõÎáan los cambios a otro repositorio.
+
+Bajo este escenario cada nodo es completamente independiente y compartir 
+es opcional.
+
+----------
+
+
+Sobre el esquema de trabajo
+-------------
+
+
+
+> **Los conceptos clave de este esquema son:**
+
+> - Los esquemas centralizados se enfocan en sincronizar, seguir y 
+respaldar archivos, los distribuidos se enfocan en compartir cambios, 
+cada cambio tiene un identificador ÎáÎõÎénico.
+> - Escribir/Grabar o descargar y aplicar son operaciones separadas, 
+en un esquema centralizado todo esto ocurre al mismo tiempo.
+> - Existen dos tÎáÎéÎİrminos importante:
+> - Push: acciÎáÎõÎån de mandar cambios a algÎáÎõÎén otro repositorio.
+> - Pull: obtener cambios de otro repositorio.
+
+
+> **Las principales ventajas son:**
+
+> - Es rÎáÎõÎİpido, los diffs, que son comparaciones que se realizan entre
+ la versiÎáÎõÎån actual del proyecto y las anteriores, los commits y los
+   reverts, que son almacenar de forma segura los cambios y revertir 
+     alguna modificaciÎáÎõÎån respectivamente, todo ello ocurre de forma local.
+     > - Se trabaja offline.
+     > - Se adapta bien a los cambios.
+     > - Realizar un desarrollo local (branch) y enviarlo para integrarse 
+     al repositorio principal (merge) son operaciones que se realizan 
+     fÎáÎõÎİcilmente.
+     > -  Requiere poco mantenimiento.
+
+     #### Dos exponentes importantes son git y Mercurial
+
+     Mercurical es rÎáÎõÎİpido y simple. Se le conoce con el nickname de hg, 
+     sÎáÎõÎámbolo de la tabla periÎáÎõÎådica del mercurio.
+
+     Los desarrolladores de Linux necesitaban un nuevo sistema de control 
+     de versiones asÎáÎõÎá que acudieron al gurÎáÎõÎé de Linux, Torvalds, en busca 
+     de una soluciÎáÎõÎån.
+     Git fue creado como una herramienta que pudiera adaptarse al cambio 
+     y al desarrollo colaborativo. 
+     Este esquema fue concebido para ser completamente distribuido, los 
+     programadores se hallan en cualquier parte y pueden trabajar desde 
+     diferentes compañÎáÎõÎáas o desde su casa y todos contribuyen al mismo
+      proyecto.
+
